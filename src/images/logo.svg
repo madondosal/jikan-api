@@ -26,7 +26,7 @@
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
      inkscape:zoom="1.9233439"
-     inkscape:cx="229.99998"
+     inkscape:cx="94.948385"
      inkscape:cy="226.42857"
      inkscape:document-units="mm"
      inkscape:current-layer="layer1"
@@ -66,13 +66,13 @@
        id="path5154"
        sodipodi:type="arc"
        sodipodi:cx="107.53423"
-       sodipodi:cy="142.78572"
+       sodipodi:cy="143.33598"
        sodipodi:rx="38.364582"
        sodipodi:ry="37.797619"
        sodipodi:start="0"
        sodipodi:end="6.2693623"
        sodipodi:open="true"
-       d="m 145.89882,142.78572 a 38.364582,37.797619 0 0 1 -38.23201,37.79739 38.364582,37.797619 0 0 1 -38.496243,-37.53615 38.364582,37.797619 0 0 1 37.965933,-38.05683 38.364582,37.797619 0 0 1 38.75865,37.27313" />
+       d="m 145.89882,143.33598 a 38.364582,37.797619 0 0 1 -38.23201,37.7974 38.364582,37.797619 0 0 1 -38.496243,-37.53616 38.364582,37.797619 0 0 1 37.965933,-38.05682 38.364582,37.797619 0 0 1 38.75865,37.27312" />
     <path
        d="m 137.68618,142.87184 a 30.427082,31.183035 0 0 1 -30.32193,31.18285 30.427082,31.183035 0 0 1 -30.531503,-30.96733 30.427082,31.183035 0 0 1 30.110913,-31.39688 30.427082,31.183035 0 0 1 30.73962,30.75033"
        sodipodi:open="true"
@@ -86,18 +86,16 @@
        id="path5161"
        style="fill:#fc8621;fill-opacity:1;stroke-width:0.23957686" />
     <rect
-       y="134.09225"
-       x="143.25298"
-       height="21.544647"
+       y="140.97047"
+       x="142.01491"
+       height="7.7882237"
        width="25.702381"
        id="rect5163"
-       style="fill:#682c0e;fill-opacity:1;stroke-width:0.26458332" />
-    <rect
-       y="139.78709"
-       x="143.96925"
-       height="10.065189"
-       width="23.125971"
-       id="rect5170"
-       style="fill:#fc8621;fill-opacity:1;stroke-width:0.21099371" />
+       style="fill:#682c0e;fill-opacity:1;stroke-width:0.15907867" />
+    <path
+       style="fill:#682c0e;stroke:none;stroke-width:0.26458332px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;fill-opacity:1"
+       d="M 126.34647,145.17507 97.320414,125.91608 97.182849,158.79394 Z"
+       id="path8502"
+       inkscape:connector-curvature="0" />
   </g>
 </svg>

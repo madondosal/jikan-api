@@ -1,0 +1,40 @@
+@import "_utils";
+
+.popular-characters {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr, 1fr;
+  grid-gap: 20px;
+  padding: 10px;
+  margin-top: 20px;
+  .character {
+    background: darken($color: $primary-color, $amount: 15);
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    img {
+      width: 100px;
+      overflow: hidden;
+      border-radius: 5px;
+    }
+    .character-details {
+      flex: 1;
+      color: darken($accent, 10);
+      padding-left: 20px;
+    }
+  }
+
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 10px 0;
+    padding: 0 5px;
+    color: $primary-color;
+    border-bottom: $accent 2px solid;
+    padding-bottom: 15px;
+    grid-column-start: 1;
+    grid-column-end: 3;
+  }
+}

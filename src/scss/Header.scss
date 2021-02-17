@@ -7,6 +7,7 @@ header {
   left: 0;
   width: 100%;
   padding: 5px 0;
+  z-index: 2;
   .container {
     display: flex;
     justify-content: space-between;
@@ -67,13 +68,14 @@ header {
     position: fixed;
     width: 60%;
     height: 100vh;
-    background: #682c0ea8;
+    background: #8fa6adf6;
     display: flex;
     align-items: center;
     justify-content: center;
     transition: left 0.7s;
+    top: 0;
+    z-index: 1;
     .side-nav-links {
-      margin-top: -100px;
       list-style-type: none;
       display: flex;
       flex-direction: column;

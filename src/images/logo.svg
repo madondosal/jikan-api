@@ -55,14 +55,14 @@
      id="layer1"
      transform="translate(-47.247032,-83.821426)">
     <ellipse
-       style="fill:#fc8621;fill-opacity:1;stroke-width:0.26458332"
+       style="fill:#8fa6ad;fill-opacity:1;stroke-width:0.26458332"
        id="path4599"
        cx="107.53423"
        cy="143.73065"
        rx="60.287201"
        ry="59.909225" />
     <path
-       style="fill:#682c0e;fill-opacity:1;stroke-width:0.26458332"
+       style="fill:#456268;fill-opacity:1;stroke-width:0.26458332"
        id="path5154"
        sodipodi:type="arc"
        sodipodi:cx="107.53423"
@@ -84,16 +84,16 @@
        sodipodi:cx="107.2591"
        sodipodi:type="arc"
        id="path5161"
-       style="fill:#fc8621;fill-opacity:1;stroke-width:0.23957686" />
+       style="fill:#8fa6ad;fill-opacity:1;stroke-width:0.23957686" />
     <rect
        y="140.97047"
        x="142.01491"
        height="7.7882237"
        width="25.702381"
        id="rect5163"
-       style="fill:#682c0e;fill-opacity:1;stroke-width:0.15907867" />
+       style="fill:#456268;fill-opacity:1;stroke-width:0.15907867" />
     <path
-       style="fill:#682c0e;stroke:none;stroke-width:0.26458332px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;fill-opacity:1"
+       style="fill:#456268;stroke:none;stroke-width:0.26458332px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;fill-opacity:1"
        d="M 126.34647,145.17507 97.320414,125.91608 97.182849,158.79394 Z"
        id="path8502"
        inkscape:connector-curvature="0" />

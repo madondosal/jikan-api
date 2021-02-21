@@ -7,13 +7,19 @@ export const GlobalContextProvider = (props) => {
     switch (action.type) {
       case "SETCURRENTPAGE":
         return { ...state, currentPage: action.value };
+      case "SETKEYWORD":
+        return { ...state, keyword: action.value };
+      case "SETFETCHERROR":
+        return { ...state, fetchError: action.value };
       default:
         throw new Error("Unexpected Action Type!");
     }
   }
 
   const [state, dispatch] = useReducer(reducer, {
-    currentPage: "home",
+    currentPage: "Home",
+    keyword: "",
+    fetchError: false,
   });
   return (
     <GlobalContext.Provider value={{ state, dispatch }}>

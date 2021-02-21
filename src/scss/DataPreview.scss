@@ -1,28 +1,43 @@
 @import "_utils";
 
 .preview {
-  .header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin: 10px 0;
-    padding: 0 5px;
-    color: $primary-color;
-    border-bottom: $accent 2px solid;
-    padding-bottom: 15px;
-  }
-
+  position: relative;
   .preview-tiles {
+    position: relative;
+    min-height: 300px;
     display: flex;
+    overflow-x: scroll;
     justify-content: space-between;
     align-items: flex-start;
-    margin-top: 27px;
-    img {
-      width: 270px;
-      margin-right: 25px;
+    margin-top: 15px;
+    margin-bottom: 20px;
+    &::-webkit-scrollbar {
+      display: none;
+    }
+
+    a {
+      margin-right: 15px;
       &:last-child {
         margin-right: 0;
       }
     }
+    img {
+      width: 19%;
+      min-width: 200px;
+      height: 300px;
+      object-fit: cover;
+      object-position: top;
+    }
   }
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 10px 0;
+  padding: 0 5px;
+  color: $primary-color;
+  border-bottom: $primary-color 2px solid;
+  padding-bottom: 15px;
 }

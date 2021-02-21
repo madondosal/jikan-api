@@ -8,11 +8,14 @@ import HomeCharacters from "./HomeCharacters";
 
 const Home = () => {
   const { state, dispatch } = useContext(GlobalContext);
-  useEffect(() => dispatch({ type: "SETCURRENTPAGE", value: "home" }), []);
+  useEffect(() => dispatch({ type: "SETCURRENTPAGE", value: "Home" }), []);
 
   return (
     <main>
       <Showcase />
+      <div id="top-content-header" className="container">
+        <h1>Top Content Right Now!</h1>
+      </div>
       <DataPreview
         title="Anime"
         url="https://api.jikan.moe/v3/top/anime/1/airing"
@@ -46,9 +49,11 @@ const Home = () => {
           magna esse commodo eu cillum. Dolore officia in enim elit Lorem
           cupidatat dolore voluptate anim eu Lorem.
         </p>
-        <a href="#" className="btn-lg">
-          Start 30 days free!
-        </a>
+        <div id="buttons">
+          <a href="#" className="btn-lg">
+            Start 30 days free!
+          </a>
+        </div>
       </div>
     </main>
   );

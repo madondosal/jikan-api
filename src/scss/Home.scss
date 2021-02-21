@@ -6,23 +6,47 @@ main {
   background: $secondary-dark;
   padding-bottom: 50px;
   #membership-info {
+    margin-top: 20px;
     #membership {
       margin: 0;
       margin-bottom: 30px;
       color: $primary-color;
+      @media only screen and (max-width: 768px) {
+        text-align: center;
+      }
     }
     .membership-text {
       color: lighten($primary-color, 10);
       line-height: 1.3em;
-      font-size: 18px;
+      font-size: 17px;
       width: 95%;
       margin-bottom: 50px;
+      @media only screen and (max-width: 768px) {
+        text-align: center;
+      }
+    }
+
+    #buttons {
+      @media only screen and (max-width: 768px) {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
     }
 
     .btn-lg {
       background: lighten($secondary-dark, 10);
-      padding: 10px 15px;
+      padding: 15px 20px;
       color: lighten($primary-color, 20);
+      margin-bottom: 20px;
+    }
+  }
+
+  #top-content-header {
+    color: $primary-color;
+    margin: 25px auto;
+    @media only screen and (max-width: 768px) {
+      text-align: center;
     }
   }
 }

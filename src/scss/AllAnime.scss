@@ -1,0 +1,39 @@
+@import "_utils";
+
+#all {
+  min-height: 80vh;
+  position: relative;
+  background: lighten($secondary-dark, 5);
+  padding: 20px;
+  border-radius: 10px;
+  top: 70px;
+  display: grid;
+  grid-gap: 15px;
+  grid-template-columns: repeat(5, 1fr);
+  margin-bottom: 20px;
+  @media only screen and (max-width: 768px) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  @media only screen and (max-width: 450px) {
+    grid-template-columns: 1fr;
+  }
+
+  #no-results-found {
+    grid-column-start: 1;
+    grid-column-end: 6;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: lighten($primary-color, 5);
+
+    h2 {
+      margin-bottom: 15px;
+    }
+
+    p {
+      width: 70%;
+      text-align: center;
+    }
+  }
+}

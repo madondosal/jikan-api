@@ -1,5 +1,4 @@
 import React from "react";
-import ShowcaseImage from "../images/showcase.jpg";
 import "../scss/Showcase.scss";
 
 function Showcase() {

@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import "../scss/HomeCharacters.scss";
+import getSpinner from "../Spinner/Spinner";
 
 const HomeCharacters = () => {
   const [characters, setCharacters] = useState(null);
@@ -19,7 +20,7 @@ const HomeCharacters = () => {
   const getPopularCharacters = () => {
     return characters.map((character) => {
       return (
-        <div className="character">
+        <div className="character" key={character.mal_id}>
           <img src={character.image_url} />
           <div className="character-details">
             <h3 className="character-name">{character.title}</h3>
@@ -32,13 +33,15 @@ const HomeCharacters = () => {
   };
 
   return (
-    <div className="popular-characters container">
-      {characters === null ? <p>Loading...</p> : getPopularCharacters()}
-      <div className="header">
-        <h3 className="header-title">Popular Characters</h3>
-        <p>{"See Characters>>"}</p>
+    <>
+      <div className="popular-characters container">
+        {characters === null ? getSpinner() : getPopularCharacters()}
       </div>
-    </div>
+      <div className="header container">
+        <h3 className="header-title">Characters</h3>
+        <p>{"See All>>"}</p>
+      </div>
+    </>
   );
 };
 

@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import "../scss/Header.scss";
 import Logo from "../images/logo.svg";
 
@@ -29,7 +30,7 @@ function Header() {
         </div>
         <ul id="banner-navigation-links">
           <li>
-            <a href="#">home</a>
+            <Link to="/">home</Link>
           </li>
           <li>
             <a href="#">categories</a>

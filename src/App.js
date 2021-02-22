@@ -11,9 +11,9 @@ function App() {
   return (
     <>
       <GlobalContextProvider>
-        <Header />
         <TitleBar />
         <Router>
+          <Header />
           <Route exact path="/" component={Home} />
           <Route
             path="/all-anime"

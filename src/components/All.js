@@ -1,4 +1,5 @@
 import React, { useContext, useEffect, useState } from "react";
+import { Link } from "react-router-dom";
 import useFetch from "../hooks/useFetch";
 import { GlobalContext } from "../context/GlobalContext";
 import getSpinner from "../Spinner/Spinner";
@@ -46,12 +47,14 @@ const All = (props) => {
     return data.map((unitData) => {
       return (
         <div className="card" key={unitData.mal_id}>
-          <img src={unitData.image_url} />
-          <div className="details">
-            <p style={{ fontWeight: "bold" }}>{unitData.title}</p>
-            <p>{unitData.type}</p>
-            <p>{unitData.score}</p>
-          </div>
+          <Link to={`/details/${props.data.type}/${unitData.mal_id}`}>
+            <img src={unitData.image_url} />
+            <div className="details">
+              <p style={{ fontWeight: "bold" }}>{unitData.title}</p>
+              <p>{unitData.type}</p>
+              <p>{unitData.score}</p>
+            </div>
+          </Link>
         </div>
       );
     });

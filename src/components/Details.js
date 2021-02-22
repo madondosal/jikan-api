@@ -52,7 +52,7 @@ const CoreDetails = (props) => {
 const Characters = (props) => {
   const url = `https://api.jikan.moe/v3/${props.match.params.type}/${
     props.match.params.id
-  }/${props.match.params.type === "anime" ? "character_staff" : "characters"}`;
+  }/${props.match.params.type === "anime" ? "characters_staff" : "characters"}`;
   const { data, isLoading } = useGetData(url);
 
   const getCharacters = () => {

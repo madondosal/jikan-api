@@ -55,7 +55,9 @@ const DataPreview = (props) => {
       </div>
       <div className="header container">
         <h3 className="header-title">{props.title}</h3>
-        <p className="header-link">{"See All>>"}</p>
+        <p className="header-link">
+          <Link to={`/all-${props.title.toLowerCase()}`}>{"See All>>"}</Link>
+        </p>
       </div>
     </>
   );
